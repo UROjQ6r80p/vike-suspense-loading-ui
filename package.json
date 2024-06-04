@@ -1,0 +1,22 @@
+{
+    "type": "module",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development node server",
+        "prod": "npm run build && npm run server:prod",
+        "build": "rimraf dist && vite build",
+        "server:prod": "cross-env NODE_ENV=production node server"
+    },
+    "dependencies": {
+        "@vitejs/plugin-react": "^4.3.0",
+        "express": "^4.19.2",
+        "nprogress": "^0.2.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-streaming": "^0.3.28",
+        "vike": "^0.4.172"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "rimraf": "^5.0.7"
+    }
+}
